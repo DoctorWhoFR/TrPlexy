@@ -1,5 +1,15 @@
-# TrPlexy
-Transmission Interface for Linux (working great with Plex !)
+# TrPlexy [Work in progress]
+Transmission Interface for Linux (working great with Plex !), this website build in angular (single page), you can use TrPlexy to find and download every torrent you want and directly add it to your private server AND if you use Plex you can easily set the Plex Folder to your Trplexy folder so after every download you can watch it using Pplex !
+
+
+#Features:
+
+- Search torrent using many different provider
+  - Download any torrent using the searching function
+
+- Managing of torrent (using transmission) [status, remove, stop, start]
+
+
 
 
 # Easy install:
