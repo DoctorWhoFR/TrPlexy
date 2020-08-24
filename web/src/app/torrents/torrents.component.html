@@ -1,0 +1,27 @@
+
+
+<div class="container">
+  <h1>Listes des Torrents!</h1>
+  <button (click)="refresh()" class="btn btn-primary">REFRESH</button><br>
+  <div class="row">
+    <div class="col-sm" *ngFor="let torrent of torrents">
+      <div class="card" style="width: 18rem; margin-top: 15px;">
+        <div class="card-body">
+
+          <h4>Status: <span *ngIf="torrent.status == 4" style="color: #c9b410;">FETCHING</span><span *ngIf="torrent.status == 0">PAUSED</span><span *ngIf="torrent.status == 6" style="color:green;">FINISHED (seeding)</span></h4>
+          <div>
+          </div>
+
+            <h6><strong>Name: </strong> <span>{{torrent.name}}</span></h6>
+            <div class="progress" style="margin-bottom: 15px;">
+              <div class="progress-bar bg-primary" style="width: {{torrent.percentDone * 100}}%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="1">{{torrent.percentDone*100}}%</div>
+            </div>
+
+            <button class="btn btn-primary" type="button" *ngIf="torrent.status == 0" (click)="start(torrent.id)">START</button><button class="btn btn-secondary" type="button" *ngIf="torrent.status == 4">STOP</button><button class="btn btn-info" type="button" *ngIf="torrent.status == 6" (click)="stop(torrent.id)">STOP SEEDING</button><button class="btn btn-danger" type="button" (click)="remove(torrent.id)">DELETE</button>
+        </div>
+      </div>
+      <br>
+    </div>
+
+  </div>
+</div>
