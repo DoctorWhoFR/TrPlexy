@@ -9,6 +9,22 @@ Transmission Interface for Linux (working great with Plex !), this website build
 
 - Managing of torrent (using transmission) [status, remove, stop, start]
 
+Supported providers
+
+    TorrentLeech: cookie authentification
+    IpTorrents: credentials and cookie authentification
+    Torrent9
+    Torrentz2
+    1337x
+    ThePirateBay
+    YggTorrent : credentials and cookie authentification
+    KickassTorrents
+    Rarbg
+    TorrentProject
+    Yts
+    Limetorrents
+    Eztv
+
 
 
 
